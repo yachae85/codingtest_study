@@ -1,5 +1,3 @@
-package 스터디;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,6 +14,7 @@ public class Combination {
         for (List<Integer> subset : ans)
             System.out.println(subset);
     }
+
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> ans = new ArrayList<>();
         boolean[] visit = new boolean[n];
@@ -23,12 +22,13 @@ public class Combination {
         func(0, n, 0, k, ans, visit);
         return ans;
     }
+
     public static void func(int now, int size, int count, int depth, List<List<Integer>> ans, boolean[] visit) {
         if (count == depth) {
             List<Integer> subset = new ArrayList<>();
             for (int i = 0; i < size; i++) {
                 if (visit[i])
-                    subset.add(i+1);
+                    subset.add(i + 1);
             }
             ans.add(subset);
         } else if (now < size) {
