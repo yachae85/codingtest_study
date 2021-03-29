@@ -31,8 +31,6 @@ int size_of_one(int i, int j, int d)
     {
       if (y >= 10 || x >= 10 || arr[y][x] == 0)
         return 0;
-      if (arr[y][x] == 0)
-        return 0;
     }
   }
   return 1;
@@ -124,7 +122,18 @@ int main()
     cout << ans << endl;
   else
   {
-    cout << -1 << endl;
+    for (int i = 0; i < 10; i++)
+    {
+      for (int j = 0; j < 10; j++)
+      {
+        if (arr[i][j] == 1)
+        {
+          cout << -1 << endl;
+          return 0;
+        }
+      }
+    }
+    cout << 0 << endl;
   }
 
   return 0;
