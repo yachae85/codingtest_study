@@ -24,3 +24,11 @@
 
 1. 파이프옮기기1 : https://www.acmicpc.net/problem/17070  
 2. 색종이 : https://www.acmicpc.net/problem/17136  
+
+
+## 4주차
+
+출제자 : 백웅기
+
+1. 멀티탭스케줄링 : https://www.acmicpc.net/problem/1700  
+2. 욕심쟁이 판다 : https://www.acmicpc.net/problem/1937   
